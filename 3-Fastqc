@@ -1,0 +1,14 @@
+fastqc /beatriz_toledo/ChIP_CN_Input_1_1.fastq
+# Not so good per sequence GC content 83,7% percent of sequences remaining if deduplicates - I will remove duplicates as they did in the article, but I don’t need to trim
+fastqc /beatriz_toledo/ChIP_CN_Input_1_2.fastq
+# Not so good per sequence GC content 85,73% percent of sequences remaining if deduplicates - I will remove duplicates as they did in the article, but I don’t need to trim
+fastqc /beatriz_toledo/ChIP_CN_Input_2_1.fastq
+# Per tile sequence quality - Not so good per base sequence content 84,08% percent of sequences remaining if deduplicates - I will remove duplicates as they did in the article, but I don’t need to trim
+fastqc /beatriz_toledo/ChIP_NPC_Input_1_1.fastq
+# Not so good Per base sequence content, 81,07% percent of sequences remaining if deduplicates - I will remove duplicates as they did in the article, but I don’t need to trim
+fastqc /beatriz_toledo/ChIP_NPC_Input_1_2.fastq
+# 81,85% percent of sequences remaining if deduplicates - I will remove duplicates as they did in the article, but I don’t need to trim
+fastqc /beatriz_toledo/ChIP_NPC_Input_2_1.fastq
+# Not so good Per base sequence content , 82,75% percent of sequences remaining if deduplicates - I will remove duplicates as they did in the article, but I don’t need to trim
+fastqc /beatriz_toledo/ChIP_NPC_Input_2_2.fastq
+# Not so good Per base sequence content , 83,26% percent of sequences remaining if deduplicates - I will remove duplicates as they did in the article, but I don’t need to trim

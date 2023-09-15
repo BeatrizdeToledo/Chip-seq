@@ -1,0 +1,21 @@
+samtools sort -n -o ChIP_NPC_H3K9me3_2_paired_sortname.bam ChIP_NPC_H3K9me3_2_paired.bam
+samtools fixmate -m  ChIP_NPC_H3K9me3_2_paired_sortname.bam  ChIP_NPC_H3K9me3_2_paired_fixmate.bam
+samtools sort -o ChIP_NPC_H3K9me3_2_paired_sortposition.bam ChIP_NPC_H3K9me3_2_paired_fixmate.bam
+samtools markdup -r ChIP_NPC_H3K9me3_2_paired_sortposition.bam ChIP_NPC_H3K9me3_2_paired_rmdup.bam
+
+samtools sort -n -o ChIP_N_Input_1_paired_sortname.bam ChIP_N_Input_1_paired.bam
+samtools fixmate -m ChIP_N_Input_1_paired_sortname.bam ChIP_N_Input_1_paired_fixmate.bam 
+samtools sort -o ChIP_N_Input_1_paired_sortposition.bam ChIP_N_Input_1_paired_fixmate.bam
+samtools markdup -r ChIP_N_Input_1_paired_sortposition.bam ChIP_N_Input_1_paired_rmdup.bam
+
+
+
+samtools sort -n -o ChIP_NPC_Input_1_paired_sortname.bam ChIP_NPC_Input_1_paired.bam
+samtools fixmate -m ChIP_NPC_Input_1_paired_sortname.bam ChIP_NPC_Input_1_paired_fixmate.bam 
+samtools sort -o ChIP_NPC_Input_1_paired_sortposition.bam ChIP_NPC_Input_1_paired_fixmate.bam
+samtools markdup -r ChIP_NPC_Input_1_paired_sortposition.bam ChIP_NPC_Input_1_paired_rmdup.bam
+
+samtools sort -n -o ChIP_NPC_Input_2_paired_sortname.bam ChIP_NPC_Input_2_paired.bam
+samtools fixmate -m ChIP_NPC_Input_1_paired_sortname.bam ChIP_NPC_Input_2_paired_fixmate.bam 
+samtools sort -o ChIP_NPC_Input_2_paired_sortposition.bam ChIP_NPC_Input_2_paired_fixmate.bam
+samtools markdup -r ChIP_NPC_Input_2_paired_sortposition.bam ChIP_NPC_Input_2_paired_rmdup.bam

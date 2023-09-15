@@ -1,0 +1,13 @@
+curl ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR533/SRR5339972/SRR5339972.sra > ChIP_NPC_Input_2.sra
+curl ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR533/SRR5339971/SRR5339971.sra > ChIP_NPC_Input_1.sra
+curl ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR533/SRR5339990/SRR5339990.sra > ChIP_CN_Input_2.sra
+curl ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR533/SRR5339989/SRR5339989.sra > ChIP_CN_Input_1.sra
+
+
+
+
+
+samtools flagstat ChIP_N_Input_2_nonpaired.bam > ChIP_N_Input_2_nonpaired_stats.txt
+samtools flagstat ChIP_N_Input_1_paired.bam > ChIP_N_Input_1_paired_stats.txt
+samtools flagstat ChIP_NPC_Input_2_paired.bam > ChIP_NPC_Input_2_paired_stats.txt
+samtools flagstat ChIP_NPC_Input_1_paired.bam > ChIP_NPC_Input_1_paired_stats.txt

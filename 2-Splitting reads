@@ -1,0 +1,4 @@
+fastq-dump --split-files -F /Users/beatriz_toledo/ChIP_NPC_Input_2.sra
+fastq-dump --split-files -F /Users/beatriz_toledo/ChIP_NPC_Input_1.sra
+fastq-dump --split-files -F /Users/beatriz_toledo/ChIP_CN_Input_2.sra
+fastq-dump --split-files -F /Users/beatriz_toledo/ChIP_CN_Input_1.sra

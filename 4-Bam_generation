@@ -1,0 +1,8 @@
+bwa mem mm10.fa /beatriz_toledo/fastq/ChIP_NPC_Input_1_1.fastq /beatriz_toledo/fastq/ChIP_NPC_Input_1_2.fastq | samtools sort > /beatriz_toledo/bam/ChIP_NPC_Input_1_paired.bam
+bwa mem mm10.fa /beatriz_toledo/fastq/ChIP_NPC_Input_2_1.fastq /beatriz_toledo/fastq/ChIP_NPC_Input_2_2.fastq | samtools sort > /beatriz_toledo/bam/ChIP_NPC_Input_2_paired.bam
+bwa mem mm10.fa /beatriz_toledo/fastq/ChIP_CN_Input_1_1.fastq /beatriz_toledo/fastq/ChIP_CN_Input_1_2.fastq | samtools sort > /beatriz_toledo/bam/ChIP_N_Input_1_paired.bam
+bwa mem mm10.fa /beatriz_toledo/fastq/ChIP_CN_Input_2_1.fastq | samtools sort > /beatriz_toledo/bam/ChIP_N_Input_2_nonpaired.bam
+
+gzip /beatriz_toledo/fastq/ChIP_CN_Input_2_1.fastq
+gzip /beatriz_toledo/fastq/ChIP_CN_Input_1_1.fastq
+gzip /beatriz_toledo/fastq/ChIP_CN_Input_1_2.fastq
