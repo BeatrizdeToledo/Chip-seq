@@ -1,0 +1,50 @@
+Generation of ngs plot chip seq
+
+ ngs.plot.r -G mm10 -R bed -E 100k_random_regions.bed -C H3K27ac_n3_random_regions -O H3K27ac_n3_random_regions  -L 2000
+ ngs.plot.r -G mm10 -R bed -E ensemble_enhancer.ann.txt -C H3K27ac_n3_ensemble_enhancer -O H3K27ac_n3_ensemble_enhancer  -L 2000
+ ngs.plot.r -G mm10 -R bed -E enhancer_e14.txt -C H3K27ac_n3_enhancer_e14 -O H3K27ac_n3_enhancer_e14  -L 2000
+
+ ngs.plot.r -G mm10 -R bed -E 100k_random_regions.bed -C H3K27ac_n2_randompeaks -O H3K27ac_n2_random_regions  -L 2000
+ ngs.plot.r -G mm10 -R bed -E ensemble_enhancer.ann.bed -C H3K27ac_n2_ensemble_enhancer -O H3K27ac_n2_ensemble_enhancer  -L 2000
+ ngs.plot.r -G mm10 -R bed -E enhancer_e14.bed -C H3K27ac_n2_enhancer_e14 -O H3K27ac_n2_enhancer_e14  -L 2000
+
+
+# coverage file<TAB>gene list<TAB>title
+# If you want to specify the gene list as "genome", use "-1".
+# TRY GENE LIST GENOME AND THE BED FILE
+
+
+cd /group/calegari_beatrizepi/alternativesplicing_epigenetics/H3K27ac/Graphs 
+ ngs.plot.r -G mm10 -R bed -E Neg_mm10.bed -C H3K27ac_NPCN_Ex.txt -O H3K27ac_Negexons_km5_global -L 2000 -GO km -KNC 5 -SC global -T H3K27ac Excluded Exons
+ ngs.plot.r -G mm10 -R bed -E Neg_mm10.bed -C H3K27ac_NPCN_Ex.txt -O H3K27ac_Negexons_km4_global -L 2000 -GO km -KNC 4 -SC global -T H3K27ac Excluded Exons
+ngs.plot.r -G mm10 -R bed -E Pos_mm10.bed -C H3K27ac_NPCN_Inc.txt -O H3K27ac_Posexons_hc_global -L 2000 -GO hc -SC global -T H3K27ac Included Exons
+ngs.plot.r -G mm10 -R bed -E Pos_mm10.bed -C H3K27ac_NPCN_Inc.txt -O H3K27ac_Posexons_km5 -L 2000 -GO km -KNC 5 -SC global -T H3K27ac Included Exons
+
+
+ ngs.plot.r -G mm10 -R bed -E Neg.exons.bed -C H3K4NPCNEXC.txt -O H3K4me3_Negexons_km5 -L 2000 -GO km -KNC 5 
+ ngs.plot.r -G mm10 -R bed -E Neg.exons.bed -C H3K4NPCNEXC.txt -O H3K4me3_Negexons_km4 -L 2000 -GO km -KNC 4
+ ngs.plot.r -G mm10 -R bed -E Neg.exons.bed -C H3K4NPCNEXC.txt -O H3K4me3_Negexons_km3 -L 2000 -GO km -KNC 3
+ ngs.plot.r -G mm10 -R bed -E Neg.exons.bed -C H3K4NPCNEXC.txt -O H3K4me3_Negexons_km25 -L 2000 -GO km -KNC 25
+ ngs.plot.r -G mm10 -R bed -E Neg.exons.bed -C H3K4NPCNEXC.txt -O H3K4me3_Negexons_hc -L 2000 -GO hc 
+ ngs.plot.r -G mm10 -R bed -E Pos.exons.bed -C H3K4NPCNINC.txt -O H3K4me3_Posexons_km5 -L 2000 -GO km -KNC 5 
+ ngs.plot.r -G mm10 -R bed -E Pos.exons.bed -C H3K4NPCNINC.txt -O H3K4me3_Posexons_km4 -L 2000 -GO km -KNC 4
+ ngs.plot.r -G mm10 -R bed -E Pos.exons.bed -C H3K4NPCNINC.txt -O H3K4me3_Posexons_km3 -L 2000 -GO km -KNC 3
+ ngs.plot.r -G mm10 -R bed -E Pos.exons.bed -C H3K4NPCNINC.txt -O H3K4me3_Posexons_km25 -L 2000 -GO km -KNC 25
+ ngs.plot.r -G mm10 -R bed -E Pos.exons.bed -C H3K4NPCNINC.txt -O H3K4me3_Posexons_hc -L 2000 -GO hc 
+ ####
+
+ngs.plot.r -G mm10 -R bed -E Neg_mm10.bed -C  5mc_Exc_PPDPN.txt -O 5mc_Negexons_km6 -L 2000 -GO km -KNC 6 -SC global  -T  Methylation Excluded Exons
+ ngs.plot.r -G mm10 -R bed -E Neg_mm10.bed -C 5mc_Exc_PPDPN.txt -O 5mc_Negexons_km5 -L 2000 -GO km -KNC 5 -SC global  -T  Methylation Excluded Exons
+ ngs.plot.r -G mm10 -R bed -E Neg_mm10.bed -C  5mc_Exc_PPDPN.txt -O 5mc_Negexons_km4 -L 2000 -GO km -KNC 4 -SC global  -T  Methylation Excluded Exons
+ ngs.plot.r -G mm10 -R bed -E Neg_mm10.bed -C  5mc_Exc_PPDPN.txt -O 5mc_Negexons_km3 -L 2000 -GO km -KNC 3 -SC global  -T  Methylation Excluded Exons
+ ngs.plot.r -G mm10 -R bed -E Neg_mm10.bed -C  5mc_Exc_PPDPN.txt -O 5mc_Negexons_km25 -L 2000 -GO km -KNC 25 -SC global  -T  Methylation Excluded Exons
+ ngs.plot.r -G mm10 -R bed -E Neg_mm10.bed -C  5mc_Inc_PPDPN.txt -O 5mc_Negexons_hc -L 2000 -GO hc -SC global  -T  Methylation Excluded Exons
+
+
+
+ngs.plot.r -G mm10 -R bed -C 5mc_IncExc_N.txt -O 5mc_N -L 2000 -SC global  -T 5mc N
+ngs.plot.r -G mm10 -R bed -C 5mc_IncExc_DP.txt -O 5mc_DP -L 2000 -SC global -T 5mc DP
+ ngs.plot.r -G mm10 -R bed -C 5mc_IncExc_PP.txt -O 5mc_PP -L 2000 -SC global  -T 5mc PP
+ngs.plot.r -G mm10 -R bed -C 5hmc_IncExc_N.txt -O 5hmc_N -L 2000 -SC global -T 5hmc N
+ ngs.plot.r -G mm10 -R bed -C 5hmc_IncExc_DP.txt -O 5hmc_DP -L 2000 -SC global -T 5hmc DP
+ ngs.plot.r -G mm10 -R bed -C 5hmc_IncExc_PP.txt -O 5hmc_PP -L 2000 -SC global -T 5hmc PP
